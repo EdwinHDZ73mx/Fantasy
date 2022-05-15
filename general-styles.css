@@ -1,0 +1,97 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Century Gothic', 'Roboto',
+	'Ubuntu';
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+	font-family: Gabriola;
+	font-size: 50px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 1px;
+}
+
+.blue_btn {
+	color: white;
+	text-decoration: none;
+	margin: 5px;
+	padding: 5px 10px;
+	background: #0023bd;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.blue_btn:hover {
+	background: #002fff;
+}
+
+.red_btn {
+	color: white;
+	text-decoration: none;
+	margin: 5px;
+	padding: 5px 10px;
+	background: #bd0000;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.red_btn:hover {
+	background: #ff2d2d;
+}
+
+.white_btn {
+	color: #0023bd;
+	text-decoration: none;
+	margin: 5px;
+	padding: 5px 10px;
+	background: white;
+	border: 0.5px solid #0023bd;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.white_btn:hover {
+	background: #dadada;
+	border: 0.5px solid black;
+	color: black;
+}
+
+.input {
+	font-size: 1.1em;
+	border-radius: 4px;
+	border: 0.5px solid #0023bd;
+	margin-top: 5px;
+	padding: 5px;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(192,18,200,0.5);
+	border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(192,18,200,1);
+	border-radius: 10px;
+}
+.image
+{
+	width: 50%;
+	border-radius: 30px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.halfimage
+{
+	width: 50%;
+	border-radius: 30px;
+	margin-right: auto;
+	margin-left: auto;
+}

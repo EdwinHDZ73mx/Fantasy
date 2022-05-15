@@ -1,0 +1,57 @@
+.Footer {
+	color:white;
+	background: rgb(6,3,57);
+	background: linear-gradient(0deg, rgba(6,3,57,1) 0%, rgba(9,9,121,1) 100%);
+	text-align: justify;
+}
+
+.Footer h3 {
+	margin-left: 20px;
+	margin-bottom: 0px;
+	letter-spacing: 4px;
+}
+
+.Footer h4 {
+	margin:0px;
+}
+
+.link_footer {
+	color: white;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+/*Turns upside down the copyright symbol*/
+.copyleft {
+	display:inline-block;
+	transform: rotate(180deg);
+}
+
+.Footer div {
+	display: grid;
+	grid-template-columns: 4fr 2.5fr 3fr 2fr;
+	list-style: none;
+	padding-top: 10px;
+}
+  
+.Footer ul {
+	list-style: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+  
+.Footer img {
+	height: 25px;
+	width: 25px;
+}
+  
+.socialmedia {
+	margin-bottom: 0px;
+}
+  
+.socialmedia li {
+	display: inline;
+	padding-right: 10px;
+}

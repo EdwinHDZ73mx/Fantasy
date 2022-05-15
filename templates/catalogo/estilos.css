@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: #6400e7;
+    padding-bottom: 5px;
+    color: #ffffff;
+}
+
+.cuadricula {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    padding: 10px;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
+
+.descripcion {
+    margin:0;
+    font-size:18px;
+}
+
+footer {
+    color: #ffffff;
+    text-align: justify;
+    background-color: #4c00af;
+    padding: 5px;
+}
+
+h3 {
+    margin: 0;
+}

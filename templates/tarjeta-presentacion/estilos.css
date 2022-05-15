@@ -1,0 +1,41 @@
+body {
+	background: #e7e7e7;
+	height: 500px;
+	/*IMPORTANTE*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1, h3, p {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+.tarjeta {
+	background: #ffffff;
+	width: 500px;
+	border-radius: 10px;
+	padding: 15px;
+}
+
+.icon {
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+}
+
+.user {
+	margin-top: 20px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.columnas ul {
+	margin: 0;
+	display: grid;
+	grid-template-columns: 2fr 8fr;
+	list-style: none;
+	padding: 4px;
+}

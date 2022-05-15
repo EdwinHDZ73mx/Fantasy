@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="general-styles.css">
+		<link rel="stylesheet" type="text/css" href="./css/PageEditor.css">
+		<!-- Awesome Font Kit -->
+		<script src="https://kit.fontawesome.com/79c67c3215.js" crossorigin="anonymous"></script>
+		<!-- JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<title>Editor - Fantasi</title>
+	</head>
+	<body>
+		<noscript>Nesesita habilitar javascript en su navegador para ejecutar esta app.</noscript>
+		<iframe
+			title="Navigation Menu"
+			style="border:none;"
+			width="100%"
+			height="54"
+			src="html/navMenu.html">
+		</iframe>
+		<div class="main">
+			<div class="contenedor">
+				<div id="actions">
+					<div id="btn-2" class="action">
+						<i class="fa-solid fa-arrow-pointer fa-2x"></i>
+					</div>
+					<div id="btn-3" class="action">
+						<i class="fa-solid fa-text-height fa-2x"></i>
+					</div>
+					<div id="btn-4" class="action">
+						<i class="fa-solid fa-image fa-2x"></i>
+					</div>
+					<div id="btn-5" class="action">
+						<i class="fa-solid fa-link fa-2x"></i>
+					</div>
+					<div id="btn-6" class="action">
+						<i class="fa-solid fa-trash-alt fa-2x"></i>
+					</div>
+				</div>
+
+				<div id="visor">
+					<iframe id="visor-if"
+						title="Navigation Menu"
+						style="border:none;"
+						width="100%"
+						height="100%"
+						src="./templates/tarjeta-presentacion/index.html">
+					</iframe>
+				</div>
+
+				<div id="options">
+					<div id="menu2" class="panel-opt panel-hidden">
+						<h4>Select</h4>
+						<p>Selecciona un elemento de la plantilla para ver sus propiedades.</p>
+
+					</div>
+					<div id="menu3" class="panel-opt panel-hidden">
+						<h4>Texto</h4>
+						<p>Añade o edita el texto de la plantilla.</p>
+
+					</div>
+					<div id="menu4" class="panel-opt panel-hidden">
+						<h4>Imágen</h4>
+						<p>Inserta una imágen personalizada.</p>
+
+					</div>
+					<div id="menu5" class="panel-opt panel-hidden">
+						<h4>Enlace</h4>
+						<p>Añade o elimina un enlace de algún elemento</p>
+
+					</div>
+					<div id="menu6" class="panel-opt panel-hidden">
+						<h4>Borrar</h4>
+						<p>Selecciona un elemento para eliminarlo.</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<iframe
+			title="Footer"
+			style="border:none;"
+			width="100%"
+			height="210"
+			src="html/Footer.html">
+		</iframe>
+		<script src="./js/PageEditor.js"></script>
+	</body>
+</html>

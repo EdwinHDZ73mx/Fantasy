@@ -1,0 +1,79 @@
+.contenedor {
+	width: 85%;
+	margin: 10px auto;
+	padding: 10px;
+	border: 1px solid #00115d;
+	border-radius: 10px;
+	background-image: radial-gradient(circle at 10% 10%, #30005d, #00b4bd);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+a
+{
+	text-decoration: none;
+	color: black;
+}
+
+.design
+{
+	width: 200px;
+	height: 250px;
+	background-color: rgba(255, 255, 255, 0.3);
+	margin: 5px 5px;
+	border-radius: 20px;
+	border: 1px solid #44008c;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.design:hover
+{
+	background-color: rgba(255, 255, 255, 0.8)
+}
+
+.card
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.card-header
+{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.card-body
+{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.miniatura
+{
+	height: 80%;
+	overflow: hidden;
+}
+
+.card-footer
+{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 10pt;
+	color: rgb(70, 70, 70);
+}

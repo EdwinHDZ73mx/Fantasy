@@ -1,0 +1,114 @@
+[
+	{
+		"id": 1,
+		"name": "Plantilla Menú QR",
+		"category": "Tienda",
+		"preview": "menu.jpg",
+		"popularity": 3686.429
+	},
+	{
+		"id": 2,
+		"name": "Plantilla Convoca Evento",
+		"category": "Social",
+		"preview": "evento.jpg",
+		"popularity": 3686.429
+	},
+	{
+		"id": 3,
+		"name": "Plantilla Lista Todo",
+		"category": "Social",
+		"preview": "todo.jpg",
+		"popularity": 3686.429
+	},
+	{
+		"id": 4,
+		"name": "Mi sitio personal",
+		"category": "Portafolio",
+		"preview": "sitio-personal.jpg",
+		"popularity": 3686.429
+	},
+	{
+		"id": 5,
+		"name": "Tarjeta de presentación",
+		"category": "Contacto",
+		"preview": "tarjeta-presentacion.jpg",
+		"popularity": 3686.429
+	},
+	{
+		"id": 6,
+		"name": "Mi transmisión de radio",
+		"category": "Podcast",
+		"preview": "podcast.jpg",
+		"popularity": 3686.429
+	},
+	{
+		"id": 7,
+		"name": "Tablas de inventario",
+		"category": "Empresa",
+		"preview": "inventario.jpg",
+		"popularity": 3686.429
+	},
+	{
+		"id": 8,
+		"name": "Catalogo de productos",
+		"category": "Tienda",
+		"preview": "catalogo.jpg",
+		"popularity": 3686.429
+	},
+	{
+		"id": 9,
+		"name": "Menú principal de empresa",
+		"category": "Portafolio",
+		"preview": "empresa.jpg",
+		"popularity": 3686.429
+	},
+	{
+		"id": 10,
+		"name": "Colorido 1",
+		"category": "Contacto",
+		"preview": "https://thiscatdoesnotexist.com/",
+		"popularity": 3686.429
+	},
+	{
+		"id": 11,
+		"name": "Colorido 2",
+		"category": "Tienda",
+		"preview": "https://thiscatdoesnotexist.com/",
+		"popularity": 3686.429
+	},
+	{
+		"id": 12,
+		"name": "Colorido 3",
+		"category": "Blog",
+		"preview": "https://thiscatdoesnotexist.com/",
+		"popularity": 3686.429
+	},
+	{
+		"id": 13,
+		"name": "Diseño chevere 3",
+		"category": "Tienda",
+		"preview": "https://thiscatdoesnotexist.com/",
+		"popularity": 3686.429
+	},
+	{
+		"id": 14,
+		"name": "Fantasi choice 1",
+		"category": "Portafolio",
+		"preview": "https://thiscatdoesnotexist.com/",
+		"popularity": 3686.429
+	},
+	{
+		"id": 15,
+		"name": "Fantasi choice 2",
+		"category": "Contacto",
+		"preview": "https://thiscatdoesnotexist.com/",
+		"popularity": 3686.429
+	},
+	{
+		"id": 16,
+		"name": "Fantasi choice 3",
+		"category": "Tienda",
+		"preview": "https://thiscatdoesnotexist.com/",
+		"popularity": 3686.429
+	}
+]

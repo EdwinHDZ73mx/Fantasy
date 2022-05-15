@@ -1,0 +1,30 @@
+.contenedor {
+	width: 95%;
+	height: 400px;
+	margin: 10px auto;
+	padding: 10px;
+	border: 1px solid #00115d;
+	border-radius: 10px;
+	background-image: radial-gradient(circle at 10% 10%, #30005d, #00b4bd);
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	color: white;
+}
+#todesigns
+{
+	font-family: Gabriola;
+	font-size: 35px;
+	text-align: center;
+	background-color: #003289;
+	color: white;
+	font-weight: 400;
+	border-radius: 10px;
+	border: #30005d 3px solid;
+}
+#todesigns:hover
+{
+	color: black;
+	background-color: #ffffff;
+}
