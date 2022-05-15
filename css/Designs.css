@@ -60,12 +60,12 @@ a
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
 }
 
 .miniatura
 {
 	height: 80%;
-	overflow: hidden;
 }
 
 .card-footer

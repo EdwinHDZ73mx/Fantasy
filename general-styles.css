@@ -81,17 +81,23 @@ h2 {
 	background: rgba(192,18,200,1);
 	border-radius: 10px;
 }
-.image
-{
-	width: 50%;
-	border-radius: 30px;
-	margin-right: auto;
-	margin-left: auto;
-}
+
 .halfimage
 {
 	width: 50%;
 	border-radius: 30px;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+.leftCont
+{
+	width: 75%;
+	display: inline-block;
+}
+
+.rightCont
+{
+	width: 25%;
+	float: right;
 }

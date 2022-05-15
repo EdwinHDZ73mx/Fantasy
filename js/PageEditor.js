@@ -29,12 +29,7 @@ function getTemplate() {
 		default:
 			break;
 	}
-	$("#visor-if").attr("src", ruta).ready(function () {
-		var contenido = $("#visor-if").contents().find("body>*");
-		contenido.find("img").map( (i, e) => {console.log(i + e)} );
-		// .addEventListener("mouseover", (e) => {e.target.style.boxShadow = "#FF0000 0px 0px 200px"} );
-		// contenido.find("img")[0].addEventListener("mouseover", (e) => {e.target.style.boxShadow = "#FF0000 0px 0px 10px"} )
-	});
+	$("#visor-if").attr("src", ruta).ready( () => {  });
 }
 // Funciones
 function ocultaPaneles() {
