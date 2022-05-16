@@ -17,4 +17,3 @@ document.querySelectorAll(".edit-text").forEach( (element) => {
 		if (newText != null) { element.innerHTML = newText; }
 	} );
 } );
-
