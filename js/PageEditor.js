@@ -119,6 +119,12 @@ $("#btn-3")[0].addEventListener("click", function() {
 			colour.addEventListener('input', () =>{
 				element.style.color = colour.value;
 			});
+			//Boton 'Guardar cambios'
+			var guardar = window.parent.document.getElementById("guardaCambios");
+			guardar.addEventListener('click', function() {
+				$("#menu3")[0].classList.add("panel-hidden");
+				return;
+			})
 		});
 	} );
 	ocultaPaneles();
@@ -128,6 +134,23 @@ $("#btn-4")[0].addEventListener("click", function() {
 	var iframe = document.getElementById("visor-if");
 	iframe.contentWindow.document.querySelectorAll(".edit-image").forEach( (element) => {
 		element.addEventListener("click", (event) => {
+			var inputImage = window.parent.document.getElementById('file-upload');
+			var formData = new FormData();
+			formData.append("fileToUpload", blobFile);
+
+			$.ajax({
+			url: "wasd",
+			type: "IMAGE",
+			data: formData,
+			processData: false,
+			contentType: false,
+			success: function(response) {
+				console.log("ahuevo")
+			},
+			error: function(jqXHR, textStatus, errorMessage) {
+				console.log(errorMessage); // Opcional
+			}
+			});
 			//No logré solucionar esto aún, pero sigo en eso
 		} );
 	} );
