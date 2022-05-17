@@ -64,10 +64,73 @@ $("#btn-2")[0].addEventListener("click", function() {
 	$("#menu2")[0].classList.remove("panel-hidden");
 });
 $("#btn-3")[0].addEventListener("click", function() {
+	var iframe = document.getElementById("visor-if");
+	iframe.contentWindow.document.querySelectorAll(".edit-text").forEach( (element) => {
+		element.addEventListener("click", (event) => {
+			//Obtengo el texto del iframe y lo coloco en en textbox
+			window.parent.document.getElementById("nuevoTexto").innerHTML = element.innerHTML;
+			var textInputElement = window.parent.document.getElementById('nuevoTexto');
+			//Actualizo el contenido del textbox conforme se modifica
+			textInputElement.addEventListener('keyup', function(){
+				var text = textInputElement.value;
+				element.innerHTML = text;
+			});
+			//Botones de alineación de texto
+			var leftBtn = window.parent.document.getElementById("left");
+			var centerBtn = window.parent.document.getElementById("center");
+			var rightBtn = window.parent.document.getElementById("right");
+			leftBtn.addEventListener('click', function(){
+				element.style.textAlign='left';
+			})
+			centerBtn.addEventListener('click', function(){
+				element.style.textAlign='center';
+			})
+			rightBtn.addEventListener('click', function(){
+				element.style.textAlign='right';
+			})
+			//Botones de formato
+			var boldBtn = window.parent.document.getElementById("bold");
+			var underlineBtn = window.parent.document.getElementById("underline");
+			var italicBtn = window.parent.document.getElementById("italic");
+			boldBtn.addEventListener('click', function(){
+				if (element.style.fontWeight == 'bold') {
+					element.style.fontWeight='normal';
+				} else {
+					element.style.fontWeight='bold';
+				}
+				
+			})
+			underlineBtn.addEventListener('click', function(){
+				if (element.style.textDecoration == 'underline'){
+                	element.style.textDecoration = 'none';
+				}else{
+                	element.style.textDecoration = 'underline';
+				}
+			})
+			italicBtn.addEventListener('click', function(){
+				if (element.style.fontStyle == 'italic'){
+            		element.style.fontStyle = 'normal';
+				}else{
+					element.style.fontStyle = 'italic';
+				}
+			})
+			//Color Picker
+			let colour = window.parent.document.getElementById("colorPicker");
+			colour.addEventListener('input', () =>{
+				element.style.color = colour.value;
+			});
+		});
+	} );
 	ocultaPaneles();
 	$("#menu3")[0].classList.remove("panel-hidden");
 });
 $("#btn-4")[0].addEventListener("click", function() {
+	var iframe = document.getElementById("visor-if");
+	iframe.contentWindow.document.querySelectorAll(".edit-image").forEach( (element) => {
+		element.addEventListener("click", (event) => {
+			//No logré solucionar esto aún, pero sigo en eso
+		} );
+	} );
 	ocultaPaneles();
 	$("#menu4")[0].classList.remove("panel-hidden");
 });

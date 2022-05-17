@@ -44,7 +44,6 @@
 						<i class="fa-solid fa-cloud-arrow-down fa-2x"></i>
 					</div>
 				</div>
-
 				<div id="visor">
 					<iframe id="visor-if"
 						title="Navigation Menu"
@@ -59,17 +58,40 @@
 					<div id="menu2" class="panel-opt panel-hidden">
 						<h4>Select</h4>
 						<p>Selecciona un elemento de la plantilla para ver sus propiedades.</p>
-
 					</div>
 					<div id="menu3" class="panel-opt panel-hidden">
 						<h4>Texto</h4>
-						<p>Añade o edita el texto de la plantilla.</p>
-
+						<p>Edita el texto seleccionado.</p>
+						<textarea id="nuevoTexto" cols="32" rows="6"></textarea>
+						<h4>Alineación</h4>
+						<li>
+							<i id="left" class="fa-solid fa-align-left"></i>
+							<i id="center" class="fa-solid fa-align-center"></i>
+							<i id="right" class="fa-solid fa-align-right"></i>
+						</li>
+						<h4>Formato</h4>
+						<li>
+							<i id="bold" class="fa-solid fa-bold"></i>
+							<i id="underline" class="fa-solid fa-underline"></i>
+							<i id="italic" class="fa-solid fa-italic"></i>
+						</li>
+						<h4>Color</h4>
+						<input id="colorPicker" type="color" />
+						<div id="guardaCambios" class="blue_btn">Guardar cambios</div>
 					</div>
 					<div id="menu4" class="panel-opt panel-hidden">
 						<h4>Imágen</h4>
 						<p>Inserta una imágen personalizada.</p>
-
+						<div class="selec-img">
+							<i class="fa-solid fa-photo-film icon"></i>
+							<span class="text"><br>
+								Arrastre y suelte su imagen aquí.<br><br>O bien<br><br>
+							</span>
+							<label for="file-upload">Busque en archivos</label>
+							<input type="file" id="file-upload" class="label" style="display: none" multiple />
+							<br>
+							<a id="guardaTexto" class="blue_btn">Cancelar</a>
+						</div>
 					</div>
 					<div id="menu5" class="panel-opt panel-hidden">
 						<h4>Enlace</h4>
