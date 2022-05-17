@@ -81,7 +81,7 @@ li {
 	font-size: 1.4em;
 }
 
-#nuevoTexto {
+#nuevoTexto, #nuevoLink, #nuevaURL {
 	font-size: 1.1em;
 	border-radius: 4px;
 	border: 0.5px solid #0023bd;
@@ -98,28 +98,31 @@ li {
 	max-width: 80px;
 }
 
-.selec-img {
-	border-radius: 10px;
-	border: 3px dashed #838383;
-	display: grid;
+.drag-area {
+	border: 2px dashed #ddd;
 	width: 90%;
-	place-content: center;
-	padding: 2rem;
-	box-sizing: border-box;
-	display: grid;
-	place-items: center;
-	text-align: center;
-}
-
-.selec-img .icon {
-	font-size: 60px;
-	color: #0023bd;
-}
-
-.selec-img label {
-	background: #0023bd;
-	padding: 0.3rem 1rem;
+	height: 240px;
 	border-radius: 5px;
-	color: #fff;
-	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-left: 10px;
+}
+.drag-area.active {
+	background-color: #b8d4fe;
+	color: black;
+	border: 2px dashed #618ac9;
+}
+
+.drag-area .icon {
+	font-size: 100px;
+	color: #000;
+}
+
+.drag-area img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 5px;
 }

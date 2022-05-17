@@ -88,7 +88,7 @@
 						<p>Imagen actual:</p>
 						<img src="" id="imgSelec" width="80px" height="80px" alt="Ninguna imagen seleccionada"></img>
 						<p>Inserta una imágen personalizada.</p>
-						<div class="selec-img">
+						<!--<div class="selec-img">
 							<i class="fa-solid fa-photo-film icon"></i>
 							<span class="text"><br>
 								Arrastre y suelte su imagen aquí.<br><br>O bien<br><br>
@@ -97,15 +97,26 @@
 							<input type="file" id="file-upload" class="label" style="display: none" multiple />
 							<br>
 							<a id="guardaTexto" class="blue_btn">Cancelar</a>
-						</div>
+						</div>-->
+						<form id="dragToUploadForm">
+							<div class="drag-area">
+								<header>Arrastre y suelte su imagen aquí</header>
+								<p>O bien</p>
+								<button class="blue_btn button">Buscar en archivos</button>
+								<input type="file" id="inputFile" hidden />
+							</div>
+						</form>
+						<div id="replace" class="blue_btn">Reemplazar</div>
+						<!--<script src="./js/uploadImg.js"></script>-->
 					</div>
 					<div id="menu5" class="panel-opt panel-hidden">
 						<h4>Enlace</h4>
 						<p>Añada o elimine un enlace en algún elemento</p>
 						<p>Elemento seleccionado:</p>
 						<p id="elemento-enlace"></p>
-						<input type="text" id="nuevoTexto" placeholder="Texto del enlace"></input><br>
-						<input type="text" id="nuevoTexto" placeholder="url P.E: www.google.com"></input>
+						<input type="text" id="nuevoLink" placeholder="Texto del enlace"></input>
+						<input type="text" id="nuevaURL" placeholder="url P.E: www.google.com"></input>
+						<div id="vinculo" class="blue_btn">Añadir</div>
 
 					</div>
 					<div id="menu7" class="panel-opt panel-hidden">
