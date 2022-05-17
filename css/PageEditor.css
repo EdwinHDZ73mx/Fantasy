@@ -13,7 +13,7 @@
 }
 #actions
 {
-	width: 6%;
+	width: 5%;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -25,7 +25,7 @@
 .action
 {
 	width: 90%;
-	height: auto;
+	height: 45px;
 	border-radius: 5px;
 	background-color: #30005d89;
 	margin: 2px 0;
@@ -87,6 +87,15 @@ li {
 	border: 0.5px solid #0023bd;
 	margin-top: 5px;
 	padding: 5px;
+}
+
+#nuevoAncho, #nuevoAlto {
+	font-size: 1em;
+	border-radius: 4px;
+	border: 0.5px solid #0023bd;
+	margin-top: 5px;
+	padding: 5px;
+	max-width: 80px;
 }
 
 .selec-img {

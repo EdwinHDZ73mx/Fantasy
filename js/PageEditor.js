@@ -31,7 +31,7 @@ function getTemplate() {
 	}
 	$("#visor-if").attr("src", ruta + "index.html").ready( () => {  });
 }
-// Funciones
+
 // Función para comprimir archivos
 function comprime( ruta, name, zip ) {
 	var archivo = new XMLHttpRequest();
@@ -45,7 +45,6 @@ function comprime( ruta, name, zip ) {
 	archivo.open("GET", ruta + name, true);
 	archivo.send();
 }
-
 function comprime_index( zip ) {
 	zip.file( "index.html", $("#visor-if").contents().find("html").html() );
 }
@@ -56,8 +55,10 @@ function ocultaPaneles() {
 	$("#menu3")[0].classList.add("panel-hidden");
 	$("#menu4")[0].classList.add("panel-hidden");
 	$("#menu5")[0].classList.add("panel-hidden");
+	$("#menu7")[0].classList.add("panel-hidden");
 	$("#menu6")[0].classList.add("panel-hidden");
 }
+
 // Eventos
 $("#btn-2")[0].addEventListener("click", function() {
 	ocultaPaneles();
@@ -98,7 +99,6 @@ $("#btn-3")[0].addEventListener("click", function() {
 				} else {
 					element.style.fontWeight='bold';
 				}
-				
 			})
 			underlineBtn.addEventListener('click', function(){
 				if (element.style.textDecoration == 'underline'){
@@ -134,23 +134,7 @@ $("#btn-4")[0].addEventListener("click", function() {
 	var iframe = document.getElementById("visor-if");
 	iframe.contentWindow.document.querySelectorAll(".edit-image").forEach( (element) => {
 		element.addEventListener("click", (event) => {
-			var inputImage = window.parent.document.getElementById('file-upload');
-			var formData = new FormData();
-			formData.append("fileToUpload", blobFile);
-
-			$.ajax({
-			url: "wasd",
-			type: "IMAGE",
-			data: formData,
-			processData: false,
-			contentType: false,
-			success: function(response) {
-				console.log("ahuevo")
-			},
-			error: function(jqXHR, textStatus, errorMessage) {
-				console.log(errorMessage); // Opcional
-			}
-			});
+			window.parent.document.getElementById("imgSelec").setAttribute("src",element.getAttribute("src"));
 			//No logré solucionar esto aún, pero sigo en eso
 		} );
 	} );
@@ -160,6 +144,42 @@ $("#btn-4")[0].addEventListener("click", function() {
 $("#btn-5")[0].addEventListener("click", function() {
 	ocultaPaneles();
 	$("#menu5")[0].classList.remove("panel-hidden");
+});
+$("#btn-7")[0].addEventListener("click", function() {
+	var iframe = document.getElementById("visor-if");
+	//Medidas preestablecidas
+	document.getElementById("celularV").addEventListener("click", function(){
+		iframe.setAttribute("width","300");
+		iframe.setAttribute("height","450");
+	});
+	document.getElementById("celularH").addEventListener("click", function(){
+		iframe.setAttribute("width","450");
+		iframe.setAttribute("height","300");
+	});
+	document.getElementById("tabletV").addEventListener("click", function(){
+		iframe.setAttribute("width","380");
+		iframe.setAttribute("height","550");
+	});
+	document.getElementById("tabletH").addEventListener("click", function(){
+		iframe.setAttribute("width","550");
+		iframe.setAttribute("height","380");
+	});
+	document.getElementById("def").addEventListener("click", function(){
+		iframe.setAttribute("width","100%");
+		iframe.setAttribute("height","100%");
+	});
+	//Medida personalizada
+	var ancho = document.getElementById('nuevoAncho');
+	var alto = document.getElementById('nuevoAlto');
+	//Actualizo el contenido del textbox conforme se modifica
+	ancho.addEventListener('keyup', function(){
+		iframe.setAttribute("width", ancho.value);
+	});
+	alto.addEventListener('keyup', function(){
+		iframe.setAttribute("width", alto.value);
+	});
+	ocultaPaneles();
+	$("#menu7")[0].classList.remove("panel-hidden");
 });
 $("#btn-6")[0].addEventListener("click", function() {
 	ocultaPaneles();
@@ -194,6 +214,7 @@ $("#btn-6")[0].addEventListener("click", function() {
 	comprime_index( zip );
 	comprime( ruta,  "estilos.css", zip );
 	comprime( ruta,  "index.js", zip );
+	var img = zip.folder("resources");
 
 	// Timer de 3 segundos
 	setTimeout(function() {

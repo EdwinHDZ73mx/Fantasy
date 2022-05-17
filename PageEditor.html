@@ -40,6 +40,9 @@
 					<div id="btn-5" class="action">
 						<i class="fa-solid fa-link fa-2x"></i>
 					</div>
+					<div id="btn-7" class="action">
+						<i class="fa-solid fa-mobile-screen fa-2x"></i>
+					</div>
 					<div id="btn-6" class="action">
 						<i class="fa-solid fa-cloud-arrow-down fa-2x"></i>
 					</div>
@@ -56,8 +59,9 @@
 
 				<div id="options">
 					<div id="menu2" class="panel-opt panel-hidden">
-						<h4>Select</h4>
-						<p>Selecciona un elemento de la plantilla para ver sus propiedades.</p>
+						<h4>Selección</h4>
+						<p>Selecciona un elemento de texto o una imagen para modificarlo.<br>
+						Recuerde guardar los cambios que le haga a cada elemento, ya que de otra manera se perderán</p>
 					</div>
 					<div id="menu3" class="panel-opt panel-hidden">
 						<h4>Texto</h4>
@@ -81,6 +85,8 @@
 					</div>
 					<div id="menu4" class="panel-opt panel-hidden">
 						<h4>Imágen</h4>
+						<p>Imagen actual:</p>
+						<img src="" id="imgSelec" width="80px" height="80px" alt="Ninguna imagen seleccionada"></img>
 						<p>Inserta una imágen personalizada.</p>
 						<div class="selec-img">
 							<i class="fa-solid fa-photo-film icon"></i>
@@ -95,8 +101,26 @@
 					</div>
 					<div id="menu5" class="panel-opt panel-hidden">
 						<h4>Enlace</h4>
-						<p>Añade o elimina un enlace de algún elemento</p>
+						<p>Añada o elimine un enlace en algún elemento</p>
+						<p>Elemento seleccionado:</p>
+						<p id="elemento-enlace"></p>
+						<input type="text" id="nuevoTexto" placeholder="Texto del enlace"></input><br>
+						<input type="text" id="nuevoTexto" placeholder="url P.E: www.google.com"></input>
 
+					</div>
+					<div id="menu7" class="panel-opt panel-hidden">
+						<h4>Visualización</h4>
+						<p>Cambie el ancho y alto de su sitio web para probar como se ve en celulares y tablets.<br>
+						Puede usar los valores estandar o bien sus propias dimensiones</p>
+						<div id="celularV" class="blue_btn">Celular vertical</div>
+						<div id="celularH" class="blue_btn">Celular horizontal</div>
+						<div id="tabletV" class="blue_btn">Tablet vertical</div>
+						<div id="tabletH" class="blue_btn">Tablet horizontal</div>
+						<li>
+							<input type="text" id="nuevoAncho" placeholder="Ancho (px)"></input>
+							<input type="text" id="nuevoAlto" placeholder="Alto (px)"></input>
+						</li>
+						<div id="def" class="red_btn">Regresar al original</div>
 					</div>
 					<div id="menu6" class="panel-opt panel-hidden">
 						<h4>Exportar</h4>
